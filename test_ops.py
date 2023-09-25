@@ -11,5 +11,18 @@ def test_multiply():
 
 def test_divide():
     assert divide(10,5) == 2
-def test_divide2():
-    assert divide(10,0) == 0
+
+import unittest
+
+def divide(x, y):
+    if y == 0:
+        raise ValueError("Division by zero is not allowed")
+    return x / y
+
+class TestDivideFunction(unittest.TestCase):
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            divide(10, 0)
+
+if __name__ == "__main__":
+    unittest.main()
