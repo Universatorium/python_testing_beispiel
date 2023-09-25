@@ -1,5 +1,5 @@
 def plusmal(x, y):
-    result = (x + y) * 3
+    result = (x + y)
     return result
 
 def unterschreiben(s):
