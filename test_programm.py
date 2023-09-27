@@ -1,7 +1,7 @@
 from programm import *
 
 def test_plusmal():
-    assert plusmal(2,3)*3 == 15
+    assert plusmal(3,3) == 12
 def test_plusmal():
     assert plusmal(14,-3)*11 == 121
 

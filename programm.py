@@ -1,9 +1,9 @@
 def plusmal(x, y):
-    result = (x + y)
+    result = (x + y)*2
     return result
 
 def unterschreiben(s):
-    return s + " unterschrieben"
+    return s + "_unterschrieben"
 
 def url(s):
     return s + " GitHub url"
